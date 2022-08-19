@@ -39,7 +39,7 @@ for(let topic_id = 0 ; topic_id<7 ; topic_id++){
 get_data()
 async function get_data(){
     for(let topic_id = 0 ;topic_id < 7 ; topic_id++){
-        let url = "https://my-json-server.typicode.com/HusseinAuf/bld_project-1_phase-3/" + topics[topic_id];
+        let url = "http://localhost:3000/" + topics[topic_id];
         let respose = await fetch(url)
             .then(res => res.json())
             .then(json => {
@@ -79,18 +79,18 @@ function search_result(){
                 <div class="card">
                     <div class="course">
                         <img
-                        src=${courses_data[topic_id][i]["image"]}
+                        src=${courses_data[topic_id][i]["img"]}
                         alt = "${topics[topic_id]}-course"
                         class="image"
                         />
                         <p class="title">
                         <strong>${courses_data[topic_id][i]["title"]}</strong>
                         </p>
-                        <p class="author">${courses_data[topic_id][i]["author"]}</p>
+                        <p class="author">${courses_data[topic_id][i]["auth"]}</p>
                         <div class="rating">
-                        <span>${courses_data[topic_id][i]["rating"]}</span>
+                        <span>${courses_data[topic_id][i]["rate"]}</span>
                         <img
-                            src=${courses_data[topic_id][i]["star-rating"]}
+                            src=${courses_data[topic_id][i]["star"]}
                             alt="stars-rating"
                             class="image"
                         />
