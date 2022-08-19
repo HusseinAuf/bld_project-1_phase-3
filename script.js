@@ -39,7 +39,7 @@ for(let topic_id = 0 ; topic_id<7 ; topic_id++){
 get_data()
 async function get_data(){
     for(let topic_id = 0 ;topic_id < 7 ; topic_id++){
-        let url = "https://my-json-server.typicode.com/HusseinAuf/bld_project-1_phase-3/" + topics[topic_id];
+        let url = "http://localhost:3000/" + topics[topic_id];
         let respose = await fetch(url)
             .then(res => res.json())
             .then(json => {

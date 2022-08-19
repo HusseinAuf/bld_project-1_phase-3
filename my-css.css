@@ -228,7 +228,7 @@ li .aa:focus {
   margin:0px 20px;
   display: flex;
   flex-direction: row;
-  
+
 }
 .course .rating span{
   color:rgb(229,152,25);
@@ -262,6 +262,9 @@ li .aa:focus {
 display: flex;
 height: 330px;
 justify-content: center;
+}
+.tab-content{
+  min-height: 300px;
 }
 .tab-content h1{
   margin: 10px 3% 0px;
