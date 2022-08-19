@@ -1,0 +1,345 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial;
+  /* box-sizing: border-box; */
+}
+#search-icon,
+#menue-icon {
+  display: none;
+}
+/* navigation bar start */
+.nav--bar {
+  z-index: 99999;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 66px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 0px 6px #888888;
+}
+.udemy-icom {
+  height: 31px;
+  margin-right: 10px;
+}
+/* styling navlist anchor element */
+.op {
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  cursor: pointer;
+}
+/* hover effect of navlist anchor element */
+.op:hover {
+  color: rgb(103, 70, 193);
+}
+.search {
+  display: flex;
+  flex-grow: 1;
+  margin: 10px;
+  position: relative;
+}
+.search input {
+  display: flex;
+  flex-grow: 1;
+  height: 40px;
+  background-color: rgb(247, 249, 250);
+  border-radius: 25px;
+  padding-left: 50px;
+  font-size: 15px;
+  border: none;
+  outline-style: inset;
+  outline-color: black;
+  outline-width: 1px;
+}
+.search button {
+  color: rgb(138, 139, 141);
+  background-color: rgb(247, 249, 250);
+  float: left;
+  margin-right: 9px;
+  margin-top: 9px;
+  margin-left: 15px;
+  padding:0px 5px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  position: absolute;
+}
+.cart {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  float: left;
+  margin: 6px;
+  border: none;
+  cursor: pointer;
+}
+.cart:hover {
+  color: rgb(103, 70, 193);
+}
+.__log-in {
+  float: left;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 8px 12px;
+  color:#000000;
+  background-color: white;
+  cursor: pointer;
+  outline-style: inset;
+  outline-color: black;
+  outline-width: 1px;
+  text-decoration: none;
+}
+.__log-in:hover {
+  color:black;
+  background-color: rgb(242, 239, 248);
+}
+.__sign-up {
+  float: left;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  margin-right: 10px;
+  padding: 8px 12px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  outline-style: inset;
+  outline-color: black;
+  outline-width: 1px;
+  text-decoration: none;
+}
+.__sign-up:hover {
+  color:white;
+}
+.lang {
+  color: rgb(0, 0, 0);
+  position: flex;
+  background-color: white;
+  float: left;
+  border: none;
+  padding: 6px 8px;
+  outline-style: inset;
+  outline-color: black;
+  outline-width: 1px;
+  cursor: pointer;
+}
+.lang:hover {
+  background-color: rgb(242, 239, 248);
+}
+/* navigation bar end */
+/* header start */
+.header-container {
+  z-index: 200;
+  position: relative;
+  height: 400px;
+  max-width: 1300px;
+  margin: auto;
+  background-color: rgb(242, 242, 242);
+  display: flex;
+}
+.header-container .alarm {
+  max-height: 250px;
+  width: 170px;
+  margin: 30px;
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+}
+.header-container .header-text {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 60px;
+  max-width: 400px;
+   height: min-content;
+  top: 50px;
+  box-shadow: 0px 0px 6px #888888;
+}
+/* header end */
+/* courses start */
+.courses .intro-text {
+  margin: 30px 6.2%;
+}
+.courses-menue {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 6.2%;
+
+  padding:0px;
+}
+li .aa{
+  font-weight: bold;
+  text-decoration: none;
+  padding:10px;
+  color: #5b5a5a;
+  width: fit-content;
+}
+li .aa:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+li .aa:focus {
+  color: rgb(0, 0, 0);
+}
+.courses-menue li .active {
+  color: rgb(0, 0, 0);
+}
+
+.courses-list {
+  margin: 10px 110px;
+  display: flex;
+  flex-wrap: wrap;
+  outline-style: inset;
+  outline-color: black;
+  outline-width: 1px;
+}
+.course {
+  max-width: min-content;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+.course img {
+  margin: 10px;
+  max-width: 210px;
+}
+
+.course p {
+  margin: 0px 20px;
+}
+.course .author {
+  margin: 20px;
+  margin-top:5px;
+  margin:5px 20px;
+  font-size: 13px;
+  color: #464545;
+}
+.course .rating{
+  margin:0px 20px;
+  display: flex;
+  flex-direction: row;
+  
+}
+.course .rating span{
+  color:rgb(229,152,25);
+  font-size: 20px;
+  font-weight: 700;
+  margin:0px;
+}
+.course .rating img{
+  height: 22px;
+  margin:0px;
+  margin-top:3px;
+  /* padding-top:3px; */
+  margin-left: 10px;
+}
+.course .price{
+  margin:6px 20px;
+  font-weight: 700;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #000000;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 22%;
+  transform: translateY(-50%);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.cards-wrapper {
+display: flex;
+height: 330px;
+justify-content: center;
+}
+
+.tab-content h1{
+  margin: 10px 3% 0px;
+  font-weight: 600;
+  font-size: 25px;
+}
+.tab-content .description{
+  margin: 10px 3% 50px;
+  width: 70%;
+  font-size: 16px;
+}
+.tab-content{
+  border: 1px solid;
+  padding: 20px 0px;
+  margin: 0px 6%;
+}
+/* top categories */
+.top-categories h1{
+  margin: 30px 0px;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.top-categories{
+  margin: 5%;
+}
+
+.row img{
+  width: 100%;
+  max-width: 450px;
+}
+.top-categories p{
+  font-weight: 600;
+}
+/* courses end */
+@media only screen and (max-width: 840px) {
+  .op,
+  .lang,
+  .__log-in,
+  .__sign-up,
+  .search {
+    display: none;
+  }
+  #search-icon {
+    display: block;
+    position: absolute;
+    right: 70px;
+  }
+  #menue-icon {
+    display: block;
+    position: absolute;
+    left: 20px;
+  }
+  .nav--bar {
+    align-items: center;
+    justify-content: center;
+  }
+  .cart {
+    position: absolute;
+    right: 15px;
+  }
+  .header-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+  }
+  .header-container .alarm {
+    position: relative;
+    position: absolute;
+    top: 10px;
+    right: 40%;
+    margin: 0px;
+  }
+  .header-container .header-text {
+    position: relative;
+    position: absolute;
+    top: 200px;
+  }
+}

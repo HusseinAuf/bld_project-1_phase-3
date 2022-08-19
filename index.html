@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Udemy</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="my-css.css" />
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <div class="nav--bar">
+      <img
+        class="udemy-icom"
+        src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+        alt="udemy icom"
+      />
+      <a class="op">Catagories</a>
+      <form class="search">
+        <button class="search_btn">
+          <i class="fa fa-search" style="font-size: 18px"> </i>
+        </button>
+        <input
+          type="text"
+          placeholder="Search for any thing"
+          name="search"
+          class="search_txt"
+        />
+      </form>
+      <a class="op">Udemy Business</a>
+      <a class="op">Teck on Udemy</a>
+      <button class="cart">
+        <i class="fa fa-shopping-cart" style="font-size: 20px"></i>
+      </button>
+      <a class="__log-in"><strong>Log in</strong></a>
+      <a class="__sign-up"><strong>Sign up</strong> </a>
+      <button class="lang">
+        <i class="fa fa-globe" style="font-size: 20px"></i>
+      </button>
+      <i id="search-icon" class="fa fa-search" style="font-size: 18px"> </i>
+      <i id="menue-icon" class="fa fa-bars" style="font-size: 18px"></i>
+    </div>
+    <!-- header -->
+    <div class="header-container">
+      <div class="header-text">
+        <h1 style="font-weight: 600">New to Udemy? Lucky you.</h1>
+        <p style="font-size: 20px">
+          Courses start at E€169.99. Get your new-student offer before it
+          expires.
+        </p>
+      </div>
+      <img class="alarm" src="images\alarm.png" alt="alarm image" />
+    </div>
+    <!-- courses  -->
+    <section class="courses">
+      <div class="intro-text">
+        <h1 style="font-size: 30px">
+          <strong> A broad selection of courses</strong>
+        </h1>
+        <p style="font-size: 20px">
+          Choose from 185,000 online video courses with new additions published
+          every month
+        </p>
+      </div>
+      <ul class="courses-menue nav" role="tablist">
+        <li class="nav-item">
+          <a
+            class="aa nav-link active"
+            role="tab"
+            data-toggle="tab"
+            aria-current="page"
+            href="#python"
+            aria-selected="true"
+            >Python</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="aa nav-link"
+            role="tab"
+            data-toggle="tab"
+            href="#excel"
+            aria-selected="false"
+            >Excel</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="aa nav-link"
+            role="tab"
+            data-toggle="tab"
+            href="#web"
+            aria-selected="false"
+            >Web Development</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="aa nav-link"
+            role="tab"
+            data-toggle="tab"
+            href="#java"
+            aria-selected="false"
+            >JavaScript</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="aa nav-link"
+            role="tab"
+            data-toggle="tab"
+            href="#data-science"
+            aria-selected="false"
+            >Data Science</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="aa nav-link"
+            role="tab"
+            data-toggle="tab"
+            href="#aws"
+            aria-selected="false"
+            >AWS Certification</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="aa nav-link"
+            role="tab"
+            data-toggle="tab"
+            href="#drawing"
+            aria-selected="false"
+            >Drawing</a
+          >
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="python" role="tabpanel" class="tab-pane active">
+          <h1>Expand your career opportunities with Python</h1>
+          <p class="description">
+            Take one of Udemy’s range of Python courses and learn how to code
+            using this incredibly useful language. Its simple syntax and
+            readability makes Python perfect for Flask, Django, data science,
+            and machine learning. You’ll learn how to build everything from
+            games to sites to apps. Choose from a range of courses that will
+            appeal to..
+          </p>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner"></div>
+          </div>
+        </div>
+        <div id="excel" role="tabpanel" class="tab-pane">
+          <h1>Analyze and visualize data with Excel</h1>
+          <p class="description">
+            Take a Microsoft Excel course from Udemy, and learn how to use this
+            industry-standard software. Real-world experts will show you the
+            basics like how to organize data into sheets, rows and columns, and
+            advanced techniques like creating complex dynamic formulas. Both
+            small businesses and large companies use Excel to
+          </p>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner"></div>
+          </div>
+        </div>
+        <div id="web" role="tabpanel" class="tab-pane">
+          <h1>Build websites and applications with Web Development</h1>
+          <p class="description">
+            The world of web development is as wide as the internet itself. Much
+            of our social and vocational lives play out on the internet, which
+            prompts new industries aimed at creating, managing, and debugging
+            the websites and applications that we increasingly rely on.
+          </p>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner"></div>
+          </div>
+        </div>
+        <div id="java" role="tabpanel" class="tab-pane">
+          <h1>Grow your software development skills with JavaScript</h1>
+          <p class="description">
+            JavaScript is a text-based computer programming language used to
+            make dynamic web pages. A must-learn for aspiring web developers or
+            programmers, JavaScript can be used for features like image
+            carousels, displaying countdowns and timers, and playing media on a
+            webpage. With JavaScript online classes, you can learn to build...
+          </p>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner"></div>
+          </div>
+        </div>
+        <div id="data-science" role="tabpanel" class="tab-pane">
+          <h1>Lead data-driven decisions with Data Science</h1>
+          <p class="description">
+            Data science application is an in-demand skill in many industries
+            worldwide — including finance, transportation, education,
+            manufacturing, human resources, and banking. Explore data science
+            courses with Python, statistics, machine learning, and more to grow
+            your knowledge. Get data science training if you’re into research,
+            statistics,...
+          </p>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner"></div>
+          </div>
+        </div>
+        <div id="aws" role="tabpanel" class="tab-pane">
+          <h1>Become an expert in cloud computing with AWS Certification</h1>
+          <p class="description">
+            Prep for your AWS certification with an AWS course on Udemy. Learn
+            the fundamentals of AWS such as working with a serverless platform,
+            the various frameworks, security and more. With these courses,
+            you’ll build the valuable skills you need to implement cloud
+            initiatives — and open up new career opportunities. If you want to
+          </p>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner"></div>
+          </div>
+        </div>
+        <div id="drawing" role="tabpanel" class="tab-pane">
+          <h1>Expand your creative skillset with Drawing</h1>
+          <p class="description">
+            Want to start drawing for fun or take your craft to the next level?
+            Explore our online drawing classes and learn pencil drawing, figure
+            drawing, cartoon drawing, character drawing for cartoons and anime,
+            illustration, sketching, shading and more. Take an overview course
+            on the fundamentals of drawing or zero in on an area...
+          </p>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner"></div>
+          </div>
+        </div>
+      </div>
+      <!-- top categories  -->
+      <section>
+        <div class="top-categories">
+          <h1>Top categories</h1>
+          <div class="_container">
+            <div class="row">
+              <div class="_item col-md-3 col-sm-4 col-12">
+                <img src="images\top_catagories-design.png" alt="" />
+                <p>Design</p>
+              </div>
+              <div class="_item col-md-3 col-sm-4 col-12">
+                <img src="images\top_catagories-development.png" alt="" />
+                <p>Development</p>
+              </div>
+              <div class="_item col-md-3 col-sm-4 col-12">
+                <img src="images\top_catagories-marketing.png" alt="" />
+                <p>Marketing</p>
+              </div>
+              <div class="_item col-md-3 col-sm-4 col-12">
+                <img src="images\top_catagories-IT.png" alt="" />
+                <p>IT and Software</p>
+              </div>
+
+              <div class="_item col-md-3 col-sm-4 col-12">
+                <img src="images\top_catagories-personal_dev.png" alt="" />
+                <p>Personal Development</p>
+              </div>
+              <div class="_item col-md-3 col-sm-4 col-12">
+                <img src="images\top_catagories-business.png" alt="" />
+                <p>Business</p>
+              </div>
+              <div class="_item col-md-3 col-sm-4 col-12">
+                <img src="images\top_catagories-photography.png" alt="" />
+                <p>Photography</p>
+              </div>
+              <div class="_item col-md-3 col-sm-4 col-12">
+                <img src="images\top_catagories-music.png" alt="" />
+                <p>Music</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <script src="Bootstrap\js\bootstrap.js"></script> -->
+      <!-- JavaScript Bundle with Popper -->
+      <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script> -->
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+      ></script>
+    </section>
+    <script src="my-javascript\code.js"></script>
+    <!-- <script src="my-javascript\excel.js"></script> -->
+  </body>
+</html>
