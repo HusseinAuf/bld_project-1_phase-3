@@ -57,6 +57,7 @@ function search_filter(){
         search_result();
     });
 }
+let visibility = ["","d-none d-sm-block", "d-none d-md-block", "d-none d-lg-block","d-none d-lg-block"];
 function search_result(){
     for(let topic_id = 0 ;topic_id < 7 ; topic_id++){
         let courses_list = document.querySelector(`#${topics[topic_id]} .carousel-inner`);
@@ -76,7 +77,7 @@ function search_result(){
 
             if(valid || words.length === 0){
                 cards[no_of_cards++] = `
-                <div class="card">
+                <div class="card ${visibility[(no_of_cards-1)%5]}">
                     <div class="course">
                         <img
                         src=${courses_data[topic_id][i]["img"]}
