@@ -294,7 +294,17 @@ justify-content: center;
 
 .row img{
   width: 100%;
-  max-width: 450px;
+  cursor: pointer;
+  /* height: auto; */
+}
+.img-hover-zoom{
+  overflow: hidden;
+}
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
 }
 .top-categories p{
   font-weight: 600;
